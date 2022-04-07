@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BytBots-App</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <!-- start header section -->
+   <div class="container">
+      <div class="navbar">
+         <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" width="125px"></a>
+         </div>
+         <nav>
+            <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="app.html">App</a></li>
+               <li><a href="#footer">Contact</a></li>
+            </ul>
+         </nav>
+         <img src="assets/images/menu.png" alt="menu" class="menu-icon" onclick="menuToggle()">
+
+      </div>
+   </div>
+   <!-- end header section -->
+
+   <!-- start single product details -->
+   <div class="row dis">
+    <div class="col-lg-5 column">
+        <div class="cart column-1">
+            <img src="assets/images/logo-white.png" alt="" class="img-fluid mb-3"
+                style="border-radius:50%; width: 200px; height: 200px;">
+            <h5>BytBots</h5>
+            <a href="http://ai2.appinventor.mit.edu/b/50ot8" download>
+                <input type="button" class="btn btn-primary" value="Download">
+
+            </a>
+        </div>
+    </div>
+
+    <!-- <div class="col-lg-5 column">
+        <div class="cart column-1 ">
+            <img src="assets/images/Presentation1.jpg" alt="" class="img-fluid mb-3"
+                style="border-radius:70%; width: 230px; height: 200px;">
+            <h5>RGB Control</h5>
+            <a href="http://ai2.appinventor.mit.edu/b/12nc9" download>
+                <input class="btn btn-primary" type="button" value="Download">
+
+            </a>
+        </div>
+    </div> -->
+</div>
+
+   <!-- start footer -->
+   <footer class="pie-pagina" id="footer">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="assets/images/logo-white.png" alt="BytBots">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>About Us</h2>
+              <p>BYTBOTS is a home automation company in which we make homes alive. We make remote controlled , app
+                  controlled etc automations.</p>
+              <p> In the today's growing technology, its our step towards innvoation.</p>
+          </div>
+          <div class="box">
+              <h2>Find us on</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/Bytbots" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://instagram.com/bytbots?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/bytbots" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://twitter.com/Bytbots" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/c/Bytbots" target="_blank" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 - Copyright All Right Reserved.</small>
+        </div>
+  </footer>
+   <!-- end footer -->
+
+   <!-- js for toggle menu -->
+   <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menuToggle() {
+         if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+         } else {
+            MenuItems.style.maxHeight = "0px";
+         }
+      }
+   </script>
+
+   <!-- js for product details gallery -->
+   <script>
+      var productImg = document.getElementById("productImg");
+      var smallImg = document.getElementsByClassName("small-img");
+
+      smallImg[0].onclick = function () {
+         productImg.src = smallImg[0].src;
+      }
+      smallImg[1].onclick = function () {
+         productImg.src = smallImg[1].src;
+      }
+      smallImg[2].onclick = function () {
+         productImg.src = smallImg[2].src;
+      }
+      smallImg[3].onclick = function () {
+         productImg.src = smallImg[3].src;
+      }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytBots | Buy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/Buy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href=" https://www.jotform.com/assign/212992944055463/212992972336062">
+   
+</head>
+
+<body>
+    <!-- start header section -->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="assets/images/menu.png" alt="menu" class="menu-icon" onclick="menuToggle()">
+
+        </div>
+    </div>
+    <!-- end header section -->
+    <div>
+    <label class="form-label form-label-top form-label-auto" >
+      Payment Method
+    </label>
+    <div  class="form-input-wide jf-required" data-layout="half">
+      <select class="form-dropdown validate[required]"  style="width:310px" required="" id="mySelect" onchange="myFunction()">
+        <option selected="" value=""> Select </option>
+        <option value="COD"> COD </option>
+        <option value="Online Transaction"> Online Transaction </option>
+      </select>
+      <a href="" class="btn" id="demo" style="visibility: hidden;">Click Here for Payment</a>
+
+    </div>
+  </div>
+  
+     
+<div id="cod" style="visibility: hidden;" >
+  <script src="https://cdn01.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.29386" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.29386" type="text/javascript"></script>
+<script defer src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.29386" type="text/javascript"></script>
+<script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.29386" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+
+   JotForm.setConditions([{"action":[{"id":"action_1637211766941","visibility":"Show","isError":false,"field":"56"}],"id":"1637211784078","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1637211766941","field":"54","operator":"equals","value":"DEBIT CARD","isError":false}],"type":"field"}]);
+	JotForm.init(function(){
+	/*INIT-START*/
+      JotForm.setPhoneMaskingValidator( 'input_5_full', '##########' );
+      setTimeout(function() {
+          $('input_6').hint('ex: email@yahoo.com');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_69').setAttribute('tabindex',0);
+      JotForm.description('input_69', '<br />');
+      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total :"}, true);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"clickTo","qid":"1","text":"Customer Details:","type":"control_head"},{"name":"placeOrder","qid":"2","text":"Place Order","type":"control_button"},{"description":"","name":"fullName3","qid":"3","text":"Full Name","type":"control_fullname"},{"description":"","name":"address4","qid":"4","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber5","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"description":"","name":"howDid8","qid":"8","subLabel":"","text":"How did you hear about us?","type":"control_dropdown"},null,null,null,null,null,null,null,{"description":"","name":"productName","qid":"16","subLabel":"","text":"Product Name","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"\n","name":"paymentMethods","qid":"69","subLabel":"Bill Will sent at our Phone no And Mail address.","text":"Payment Methods","type":"control_textbox"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Customer Details:","type":"control_head"},{"name":"placeOrder","qid":"2","text":"Place Order","type":"control_button"},{"description":"","name":"fullName3","qid":"3","text":"Full Name","type":"control_fullname"},{"description":"","name":"address4","qid":"4","text":"Address","type":"control_address"},{"description":"","name":"phoneNumber5","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"email6","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"description":"","name":"howDid8","qid":"8","subLabel":"","text":"How did you hear about us?","type":"control_dropdown"},null,null,null,null,null,null,null,{"description":"","name":"productName","qid":"16","subLabel":"","text":"Product Name","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"\n","name":"paymentMethods","qid":"69","subLabel":"Bill Will sent at our Phone no And Mail address.","text":"Payment Methods","type":"control_textbox"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f7ed99c2c2c7240ba580251"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.29386" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.29386" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: Inter, sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: Inter, sans-serif;
+    }
+    .form-header-group {
+      font-family: Inter, sans-serif;
+    }
+    .form-label {
+      font-family: Inter, sans-serif;
+    }
+  
+    
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 16px
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+    }
+  
+    .form-all {
+      color: #2C3345;
+    }
+    .form-header-group .form-header {
+      color: #2C3345;
+    }
+    .form-header-group .form-subHeader {
+      color: #2C3345;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #2C3345;
+    }
+    .form-sub-label {
+      color: #464d5f;
+    }
+  
+    .supernova {
+      background-color: #ecedf3;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    }
+  
+    .form-all {
+      background-image: none;
+    }
+  
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+  
+  /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/213002331690441/" method="post" name="form_213002331690441" id="213002331690441" accept-charset="utf-8" autocomplete="on">
+  <input type="hidden" name="formID" value="213002331690441" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <style>
+      .form-all:before { background: none;}
+    </style>
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Customer Details:
+            </h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+        <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3">
+          Full Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <input type="text" id="first_3" name="q3_fullName3[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
+              <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+              <input type="text" id="last_3" name="q3_fullName3[last]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" required="" />
+              <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_address" id="id_4">
+        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4_addr_line1">
+          Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line1" name="q4_address4[addr_line1]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_4 address-line1" value="" data-component="address_line_1" aria-labelledby="label_4 sublabel_4_addr_line1" />
+                  <label class="form-sub-label" for="input_4_addr_line1" id="sublabel_4_addr_line1" style="min-height:13px" aria-hidden="false"> Street Address </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField" style="display:none">
+              <span class="form-address-line form-address-street-line jsTest-address-lineField">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_addr_line2" name="q4_address4[addr_line2]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_4 off" value="" data-component="address_line_2" aria-labelledby="label_4 sublabel_4_addr_line2" />
+                  <label class="form-sub-label" for="input_4_addr_line2" id="sublabel_4_addr_line2" style="min-height:13px" aria-hidden="false"> Street Address Line 2 </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-city-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_city" name="q4_address4[city]" class="form-textbox validate[required] form-address-city" data-defaultvalue="" autoComplete="section-input_4 address-level2" value="" data-component="city" aria-labelledby="label_4 sublabel_4_city" required="" />
+                  <label class="form-sub-label" for="input_4_city" id="sublabel_4_city" style="min-height:13px" aria-hidden="false"> City </label>
+                </span>
+              </span>
+              <span class="form-address-line form-address-state-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_state" name="q4_address4[state]" class="form-textbox validate[required] form-address-state" data-defaultvalue="" autoComplete="section-input_4 address-level1" value="" data-component="state" aria-labelledby="label_4 sublabel_4_state" required="" />
+                  <label class="form-sub-label" for="input_4_state" id="sublabel_4_state" style="min-height:13px" aria-hidden="false"> State / Province </label>
+                </span>
+              </span>
+            </div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField">
+              <span class="form-address-line form-address-zip-line jsTest-address-lineField ">
+                <span class="form-sub-label-container" style="vertical-align:top">
+                  <input type="text" id="input_4_postal" name="q4_address4[postal]" class="form-textbox validate[required] form-address-postal" data-defaultvalue="" autoComplete="section-input_4 postal-code" value="" data-component="zip" aria-labelledby="label_4 sublabel_4_postal" required="" />
+                  <label class="form-sub-label" for="input_4_postal" id="sublabel_4_postal" style="min-height:13px" aria-hidden="false"> Postal / Zip Code </label>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_5">
+        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_full">
+          Phone Number
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="tel" id="input_5_full" name="q5_phoneNumber5[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]" data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px" data-masked="true" value="" placeholder="0000000000" data-component="phone" aria-labelledby="label_5 sublabel_5_masked" required="" />
+            <label class="form-sub-label" for="input_5_full" id="sublabel_5_masked" style="min-height:13px" aria-hidden="false"> Phone No. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_6">
+        <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> E-mail </label>
+        <div id="cid_6" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="email" id="input_6" name="q6_email6" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
+            <label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> How did you hear about us? </label>
+        <div id="cid_8" class="form-input-wide" data-layout="half">
+          <select class="form-dropdown" id="input_8" name="q8_howDid8" style="width:310px" data-component="dropdown">
+            <option value=""> Please Select </option>
+            <option value="Newspaper"> Newspaper </option>
+            <option value="Internet"> Internet </option>
+            <option value="Magazine"> Magazine </option>
+            <option value="Other (Please specify...)"> Other (Please specify...) </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_16">
+        <label class="form-label form-label-top" id="label_16" for="input_16"> Product Name </label>
+        <div id="cid_16" class="form-input-wide" data-layout="half">
+          <input type="text" id="input_16" name="q16_productName" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="Bluetooth automation" autoComplete="section-input_16 on" style="width:310px" size="310" value="Bluetooth automation" tabindex="-1" data-component="textbox" aria-labelledby="label_16" readonly="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_69">
+        <label class="form-label form-label-top" id="label_69" for="input_69"> Payment Methods </label>
+        <div id="cid_69" class="form-input-wide" data-layout="half">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <input type="text" id="input_69" name="q69_paymentMethods" data-type="input-textbox" class="form-readonly form-textbox" data-defaultvalue="COD" autoComplete="section-input_69 on" style="width:310px" size="310" value="COD" tabindex="-1" data-component="textbox" aria-labelledby="label_69 sublabel_input_69" readonly="" />
+            <label class="form-sub-label" for="input_69" id="sublabel_input_69" style="min-height:13px" aria-hidden="false"> Bill Will sent at our Phone no And Mail address. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+            <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="clear:both">
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+ 
+</form>
+<script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.29386"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.29386"></script>
+</div>
+
+      <!-- end all products products -->
+   
+   <!-- start footer -->
+   <footer class="pie-pagina" id="footer">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="assets/images/logo-white.png" alt="BytBots">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>About Us</h2>
+              <p>BYTBOTS is a home automation company in which we make homes alive. We make remote controlled , app
+                  controlled etc automations.</p>
+              <p> In the today's growing technology, its our step towards innvoation.</p>
+          </div>
+          <div class="box">
+              <h2>Find us on</h2>
+              <div class="box">
+                <h2>Find us on</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/Bytbots" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://instagram.com/bytbots?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/bytbots" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://twitter.com/Bytbots" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/c/Bytbots" target="_blank" class="fa fa-youtube"></a>
+  
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 - Copyright All Right Reserved.</small>
+        </div>
+  </footer>
+   <!-- end footer -->
+
+   <!-- js for toggle menu -->
+   <script>
+    function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        if(x == ""){
+           document.getElementById("cod").style.visibility = "hidden" ;
+           document.getElementById("demo").style.visibility = "hidden";
+
+        } if(x == "COD"){
+           document.getElementById("cod").style.visibility = "visible" ;
+           document.getElementById("demo").style.visibility = "hidden";
+
+        } else if(x == "Online Transaction"){
+            document.getElementById("cod").style.visibility = "hidden" ;
+            document.getElementById("demo").style.visibility = "visible";
+            document.getElementById("demo").href = "https://imjo.in/GPSWem";
+        }
+    }
+    </script>
+
+
+
+  
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+   <!-- js for product details gallery -->
+   <script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick = function () {
+        productImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function () {
+        productImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function () {
+        productImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function () {
+        productImg.src = smallImg[3].src;
+    }
+</script>
+
+</body>
+
+</html>

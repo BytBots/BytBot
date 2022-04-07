@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - BytBots</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!-- start header section -->
+   <div class="container">
+      <div class="navbar">
+         <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo" width="125px"></a>
+         </div>
+         <nav>
+            <ul id="MenuItems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="app.html">App</a></li>
+               <li><a href="#footer">Contact</a></li>
+            </ul>
+         </nav>
+         <img src="assets/images/menu.png" alt="menu" class="menu-icon" onclick="menuToggle()">
+
+      </div>
+   </div>
+   <!-- end header section -->
+
+   <div class="small-container">
+       <div class="row row-2">
+           <h2>All Products</h2>
+           <select>
+               <option value="">Default Shorting</option>
+               <option value="">Short by price</option>
+               <option value="">Short by popularity</option>
+               <option value="">Short by rating</option>
+               <option value="">Short by sale</option>
+           </select>
+       </div>
+      <!-- start all products products -->
+      <div class="row">
+         <div class="col-4">
+
+            <a href="product-details-4.html"><img src="assets/images/product-4.jpg" alt="product-4"></a>
+            <a href="product-details-4.html"></a><h4>IR + Bluetooth</h4></a>
+
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.1299</p>
+         </div>
+         
+         
+         <div class="col-4">
+            <a href="product-details-3.html"><img src="assets/images/product-3.jpg" alt="product-3"></a>
+            <a href="product-details-3.html"></a><h4>Bluetooth Automation</h4></a>
+
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.1199</p>
+         </div>
+
+         <div class="col-4">
+            <a href="product-details-1.html"><img src="assets/images/product-1.jpg" alt="product-1"></a>
+            <a href="product-details-1.html"></a><h4>RGB Light</h4></a>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.599</p>
+         </div>
+
+         <div class="col-4">
+            <a href="product-details-2.html"><img src="assets/images/product-2.jpg" alt="product-2"></a>
+            <a href="product-details-2.html"></a><h4>IR Automation(INFRA)</h4></a>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.999</p>
+         </div>
+      </div>
+      <!-- end all products products -->
+
+      <!-- <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>&#8594;</span>
+      </div> -->
+   </div>
+
+   <!-- start footer -->
+   <footer class="pie-pagina" id="footer">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="assets/images/logo-white.png" alt="BytBots">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>About Us</h2>
+              <p>BYTBOTS is a home automation company in which we make homes alive. We make remote controlled , app
+                  controlled etc automations.</p>
+              <p> In the today's growing technology, its our step towards innvoation.</p>
+          </div>
+          <div class="box">
+               <h2>Find us on</h2>
+               <div class="red-social">
+                   <a href="https://www.facebook.com/Bytbots" target="_blank" class="fa fa-facebook"></a>
+                   <a href="https://instagram.com/bytbots?utm_medium=copy_link" target="_blank" class="fa fa-instagram"></a>
+                   <a href="https://www.linkedin.com/company/bytbots" target="_blank" class="fa fa-linkedin"></a>
+                   <a href="https://twitter.com/Bytbots" target="_blank" class="fa fa-twitter"></a>
+                   <a href="https://www.youtube.com/c/Bytbots" target="_blank" class="fa fa-youtube"></a>
+ 
+               </div>
+           </div>
+       </div>
+       <div class="grupo-2">
+           <small>&copy; 2022 - Copyright All Right Reserved.</small>
+       </div>
+  </footer>
+   <!-- end footer -->
+
+   <!-- js for toggle menu -->
+   <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menuToggle() {
+         if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+         } else {
+            MenuItems.style.maxHeight = "0px";
+         }
+      }
+   </script>
+</body>
+</html>
