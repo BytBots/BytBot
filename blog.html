@@ -14,23 +14,44 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <title>|Blogs|</title>
+    <title>Blogs</title>
     <style>
-        div.scroll {
-            margin-top: 10px;
-            margin-bottom: 50px;
-            margin-left: 10px;
-            padding: 15px;
-            background-color: rgb(255, 255, 255);
-            width: 95%;
-            text-align: justify;
-            
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
         }
-     
-       h1.head {
-          margin-left: 15px;
-         }
 
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 
@@ -48,7 +69,7 @@
                         <li><a href="app.html">App</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="#footer">Contact</a></li>
-                        
+
                     </ul>
                 </nav>
                 <img src="assets/images/menu.png" alt="menu" class="menu-icon" onclick="menuToggle()">
@@ -60,89 +81,108 @@
     <!-- end header section -->
 
     <!--Blog start-->
-
-
-    <h1 class="head">What Is Automation ?</h1>
-    <div class="scroll">It is a good platform to learn programming.
-        It is an educational website. Prepare for the Recruitment drive
-        of product based companies like Microsoft, Amazon, Adobe etc with
-        a free online placement preparation course. The course focuses
-        on various MCQ's & Coding question likely to be asked in the
-        interviews & make your upcoming placement season efficient and
-        successful. Also, any geeks can help other geeks by writing
-        articles on the GeeksforGeeks, publishing articles follow few
-        steps that are Articles that need little modification/improvement
-        from reviewers are published first. To quickly get your articles
-        reviewed, please refer existing articles, their formatting style,
-        coding style, and try to make you are close to them. In case you
-        are a beginner, you may refer Guidelines to write an Article
-        <br>
-
-        <video width="320" height="240" controls>
-            <source src="assets/images/R5N3IVZLO4TL31MC.mp4" type="video/mp4">
-            <source src="assets/images/R5N3IVZLO4TL31MC.mp4" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-
-        <br>
-        <br>
-        It is a good platform to learn programming.
-        It is an educational website. Prepare for the Recruitment drive
-        of product based companies like Microsoft, Amazon, Adobe etc with
-        a free online placement preparation course. The course focuses
-        on various MCQ's & Coding question likely to be asked in the
-        interviews & make your upcoming placement season efficient and
-        successful. Also, any geeks can help other geeks by writing
-        articles on the GeeksforGeeks, publishing articles follow few
-        steps that are Articles that need little modification/improvement
-        from reviewers are published first. To quickly get your articles
-        reviewed, please refer existing articles, their formatting style,
-        coding style, and try to make you are close to them. In case you
-        are a beginner, you may refer Guidelines to write an Article
-
-    </div>
-    <h1 class="head">Need of Automation</h1>
-    <div class="scroll">It is a good platform to learn programming.
-        It is an educational website. Prepare for the Recruitment drive
-        of product based companies like Microsoft, Amazon, Adobe etc with
-        a free online placement preparation course. The course focuses
-        on various MCQ's & Coding question likely to be asked in the
-        interviews & make your upcoming placement season efficient and
-        successful. Also, any geeks can help other geeks by writing
-        articles on the GeeksforGeeks, publishing articles follow few
-        steps that are Articles that need little modification/improvement
-        from reviewers are published first. To quickly get your articles
-        reviewed, please refer existing articles, their formatting style,
-        coding style, and try to make you are close to them. In case you
-        are a beginner, you may refer Guidelines to write an Article
-        <br>
-
-        <video width="320" height="240" controls>
-            <source src="assets/images/2X7EBRE8YZ6DH7QM.mp4" type="video/mp4">
-            <source src="assets/images/2X7EBRE8YZ6DH7QM.mp4" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-
-        <br>
-        <br>
-        It is a good platform to learn programming.
-        It is an educational website. Prepare for the Recruitment drive
-        of product based companies like Microsoft, Amazon, Adobe etc with
-        a free online placement preparation course. The course focuses
-        on various MCQ's & Coding question likely to be asked in the
-        interviews & make your upcoming placement season efficient and
-        successful. Also, any geeks can help other geeks by writing
-        articles on the GeeksforGeeks, publishing articles follow few
-        steps that are Articles that need little modification/improvement
-        from reviewers are published first. To quickly get your articles
-        reviewed, please refer existing articles, their formatting style,
-        coding style, and try to make you are close to them. In case you
-        are a beginner, you may refer Guidelines to write an Article
-
-    </div>
-
-<center><a href="">Next --></a></center>
 <br>
+<br>
+
+    <button class="collapsible">What Is Automation ?</button>
+    <div class="content">
+        <div class="scroll">It is a good platform to learn programming.
+            It is an educational website. Prepare for the Recruitment drive
+            of product based companies like Microsoft, Amazon, Adobe etc with
+            a free online placement preparation course. The course focuses
+            on various MCQ's & Coding question likely to be asked in the
+            interviews & make your upcoming placement season efficient and
+            successful. Also, any geeks can help other geeks by writing
+            articles on the GeeksforGeeks, publishing articles follow few
+            steps that are Articles that need little modification/improvement
+            from reviewers are published first. To quickly get your articles
+            reviewed, please refer existing articles, their formatting style,
+            coding style, and try to make you are close to them. In case you
+            are a beginner, you may refer Guidelines to write an Article
+            <br>
+
+            <video width="320" height="240" controls>
+                <source src="assets/images/R5N3IVZLO4TL31MC.mp4" type="video/mp4">
+                <source src="assets/images/R5N3IVZLO4TL31MC.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+
+            <br>
+            <br>
+            It is a good platform to learn programming.
+            It is an educational website. Prepare for the Recruitment drive
+            of product based companies like Microsoft, Amazon, Adobe etc with
+            a free online placement preparation course. The course focuses
+            on various MCQ's & Coding question likely to be asked in the
+            interviews & make your upcoming placement season efficient and
+            successful. Also, any geeks can help other geeks by writing
+            articles on the GeeksforGeeks, publishing articles follow few
+            steps that are Articles that need little modification/improvement
+            from reviewers are published first. To quickly get your articles
+            reviewed, please refer existing articles, their formatting style,
+            coding style, and try to make you are close to them. In case you
+            are a beginner, you may refer Guidelines to write an Article
+
+        </div>
+    </div>
+    <br>
+    <button class="collapsible">Need of Automation</button>
+    <div class="content">
+        <div class="scroll">It is a good platform to learn programming.
+            It is an educational website. Prepare for the Recruitment drive
+            of product based companies like Microsoft, Amazon, Adobe etc with
+            a free online placement preparation course. The course focuses
+            on various MCQ's & Coding question likely to be asked in the
+            interviews & make your upcoming placement season efficient and
+            successful. Also, any geeks can help other geeks by writing
+            articles on the GeeksforGeeks, publishing articles follow few
+            steps that are Articles that need little modification/improvement
+            from reviewers are published first. To quickly get your articles
+            reviewed, please refer existing articles, their formatting style,
+            coding style, and try to make you are close to them. In case you
+            are a beginner, you may refer Guidelines to write an Article
+            <br>
+    
+            <video width="320" height="240" controls>
+                <source src="assets/images/2X7EBRE8YZ6DH7QM.mp4" type="video/mp4">
+                <source src="assets/images/2X7EBRE8YZ6DH7QM.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+    
+            <br>
+            <br>
+            It is a good platform to learn programming.
+            It is an educational website. Prepare for the Recruitment drive
+            of product based companies like Microsoft, Amazon, Adobe etc with
+            a free online placement preparation course. The course focuses
+            on various MCQ's & Coding question likely to be asked in the
+            interviews & make your upcoming placement season efficient and
+            successful. Also, any geeks can help other geeks by writing
+            articles on the GeeksforGeeks, publishing articles follow few
+            steps that are Articles that need little modification/improvement
+            from reviewers are published first. To quickly get your articles
+            reviewed, please refer existing articles, their formatting style,
+            coding style, and try to make you are close to them. In case you
+            are a beginner, you may refer Guidelines to write an Article
+    
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ 
 
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -194,6 +234,21 @@
             speed: 1000,
             speedAsDuration: true
         });
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 </body>
 
