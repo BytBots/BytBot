@@ -78,10 +78,10 @@ p {
     background: #563434;
 }
 .header {
-    background: radial-gradient(rgb(178 205 203), #4db6ac);
+    background: white;
 }
 .header .row {
-    margin-top: 70px;
+    margin-top: 0px;
 }
 
 /* featured categories */
@@ -146,7 +146,7 @@ h4 {
 
 /* offer */
 .offer {
-    background: radial-gradient(rgb(178 205 203), #4db6ac);
+    /* background: radial-gradient(rgb(178 205 203), #4db6ac); */
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -209,11 +209,11 @@ small {
 
 /* footer */
 .footer {
-    position: fixed;
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+    position: fixed;
 }
 .footer p {
     color: #8a8a8a;
@@ -478,7 +478,7 @@ form a {
         position: absolute;
         top: 70px;
         left: 0;
-        background: #333;
+        background: rgb(255, 255, 255);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -490,7 +490,7 @@ form a {
         margin-bottom: 10px;
     }
     nav ul li a {
-        color: #fff;
+        color: rgb(0, 0, 0);
     }
     .menu-icon {
         display: block;
