@@ -91,6 +91,7 @@ p {
 .col-3 {
     flex-basis: 30%;
     min-width: 250px;
+    text-align: center;
 }
 .col-3 img {
     width: 100%;
@@ -180,7 +181,7 @@ small {
     color: #ff523b;
 }
 .col-3 p {
-    font-size: 12px;
+    font-size: 15px;
     margin: 12px 0;
     color: #777;
 }
